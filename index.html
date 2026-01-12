@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luthar James Jimenez | IT Student Portfolio</title>
 
+    <link rel="icon" href="Assets/favicons/favicon1.png" type="image/png" />
+    <!-- Social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -93,7 +99,11 @@
         <aside class="hero-right">
           <div class="profile-card">
             <div class="profile-top">
-              <div class="avatar" aria-hidden="true">LJ</div>
+              <img
+                class="avatar-img"
+                src="Assets/Luthar.png"
+                alt="Luthar James Jimenez"
+              />
               <div>
                 <p class="profile-name">Luthar James Jimenez</p>
                 <p class="profile-role">IT Student • Full-stack (Academic)</p>
@@ -236,6 +246,11 @@
         <!-- Projects -->
         <article class="tile projects">
           <h3>Selected Projects</h3>
+          <img
+            class="proj-img"
+            src="Assets/projects/HeavyMetals.png"
+            alt="HeavyMetals project screenshot"
+          />
 
           <div class="project-grid">
             <a
@@ -295,18 +310,33 @@
               rel="noreferrer"
             >
               <p class="proj-title">QRCodeGenerator • Web Tool</p>
-              <a class="link" href="https://qr-code-generator-seven-phi.vercel.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+
               <p class="muted">
                 Simple QR code generator project. Includes a live deployed link.
               </p>
+
               <div class="chips small"><span>HTML</span><span>Web</span></div>
+
+              <div class="proj-actions">
+                <span class="proj-action">Repo ↗</span>
+
+                <a
+                  class="proj-demo"
+                  href="https://qr-code-generator-seven-phi.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  onclick="event.stopPropagation()"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
             </a>
           </div>
 
-          <p class="note muted">
+          <!-- <p class="note muted">
             Pro tip: Add 1 screenshot per project (even just 1 image) — it makes
             recruiters stay longer on your page.
-          </p>
+          </p> -->
         </article>
 
         <!-- Certifications -->
@@ -396,5 +426,42 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
+  <footer class="footer">
+    <p>© <span id="year"></span> Luthar James Jimenez • Built with HTML/CSS</p>
+
+    <div class="footer-social">
+      <a
+        href="https://www.facebook.com/lutharjamesjimenez7"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Facebook"
+      >
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/james.luthar/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/luthar-james-jimenez-849b1b263/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://github.com/wmroger"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </footer>
 </html>
- 
