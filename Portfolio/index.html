@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luthar James Jimenez | IT Student Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Portfolio of Luthar James Jimenez — IT student focused on web, mobile, and networking. PHP, Firebase, SQL, Kotlin, JavaScript."
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="#top" aria-label="Go to top">
+          Luthar <span>Jimenez</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#projects">Portfolio</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#certs">Certifications</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+          <a href="resume.pdf" class="resume-btn" download>Download CV</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container" id="top">
+      <header class="hero">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <span
+              >BS Information Technology • Expected Graduation: Mar 2027</span
+            >
+          </div>
+
+          <h1>
+            Luthar James <span class="accent">Jimenez</span><br />
+            <span class="sub"
+              >Aspiring Software Engineer • Web/Mobile • Networking</span
+            >
+          </h1>
+
+          <p class="hero-desc">
+            IT student at Southwestern University (Dean’s Lister) with hands-on
+            experience building academic web, Android, and software projects
+            using PHP, Firebase, Node, and Kotlin. I enjoy solving problems,
+            working in teams, and learning new technologies.
+          </p>
+
+          <div class="hero-actions">
+            <a class="pill" href="#projects">View Projects</a>
+            <a
+              class="pill ghost"
+              href="https://github.com/wmroger"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="pill ghost"
+              href="https://www.linkedin.com/in/luthar-james-jimenez-849b1b263/"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <button class="pill ghost" type="button" onclick="copyEmail()">
+              Copy Email
+            </button>
+          </div>
+
+          <div class="hero-contact">
+            <a href="mailto:jimenezlutharjames@gmail.com"
+              >jimenezlutharjames@gmail.com</a
+            >
+            <span class="sep">•</span>
+            <a href="tel:+639234677614">+63 923 467 7614</a>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="avatar" aria-hidden="true">LJ</div>
+              <div>
+                <p class="profile-name">Luthar James Jimenez</p>
+                <p class="profile-role">IT Student • Full-stack (Academic)</p>
+              </div>
+            </div>
+
+            <div class="profile-metrics">
+              <div class="metric">
+                <p class="metric-num">3+</p>
+                <p class="metric-label">Projects Built</p>
+              </div>
+              <div class="metric">
+                <p class="metric-num">7</p>
+                <p class="metric-label">Certifications</p>
+              </div>
+              <div class="metric">
+                <p class="metric-num">2027</p>
+                <p class="metric-label">Grad Target</p>
+              </div>
+            </div>
+
+            <div class="profile-tags">
+              <span>PHP</span><span>Firebase</span><span>SQL</span
+              ><span>Kotlin</span><span>JavaScript</span>
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <section class="bento">
+        <!-- Primary / Capstone -->
+        <article class="tile capstone" id="projects">
+          <div class="tile-head">
+            <p class="label">Featured Project</p>
+            <h2>TrashTruck • TrashTrack RAG AI Chatbot App</h2>
+          </div>
+
+          <p class="muted">
+            A React Native + Expo app with a Retrieval-Augmented Generation
+            (RAG) chatbot powered by Firebase, Groq API, and Firestore. Includes
+            real-time chat UI, document management for the knowledge base, and
+            Firebase backend integration.
+          </p>
+
+          <div class="chips">
+            <span>React Native</span><span>Expo</span><span>Firebase</span
+            ><span>Firestore</span><span>Groq API</span><span>TypeScript</span>
+          </div>
+
+          <div class="tile-links">
+            <a
+              class="link"
+              href="https://github.com/WMROger/TrashTruck"
+              target="_blank"
+              rel="noreferrer"
+              >Repository ↗</a
+            >
+            <a
+              class="link"
+              href="https://github.com/WMROger/TrashTruck#readme"
+              target="_blank"
+              rel="noreferrer"
+              >README ↗</a
+            >
+          </div>
+        </article>
+
+        <!-- About / Summary -->
+        <article class="tile about">
+          <h3>About</h3>
+          <p class="muted">
+            I’m an IT student at Southwestern University with skills in web
+            development, programming, and networking. I’ve earned certifications
+            in Java, HTML, UI/UX, and computer networks. I’m eager to apply my
+            skills in a real-world environment and grow as a tech professional.
+          </p>
+          <div class="mini-list">
+            <div>
+              <strong>Strengths:</strong> Teamwork, willingness to learn,
+              problem-solving
+            </div>
+            <div>
+              <strong>Focus:</strong> Web/Mobile apps + Networking foundations
+            </div>
+          </div>
+        </article>
+
+        <!-- Tech Stack -->
+        <article class="tile stack" id="stack">
+          <h3>Core Tech Stack</h3>
+          <div class="stack-grid">
+            <div class="stack-item">
+              <p class="stack-title">Web</p>
+              <p class="muted">HTML, CSS, JavaScript, Tailwind, PHP</p>
+            </div>
+            <div class="stack-item">
+              <p class="stack-title">Mobile</p>
+              <p class="muted">Kotlin, Android Studio, Firebase</p>
+            </div>
+            <div class="stack-item">
+              <p class="stack-title">Data</p>
+              <p class="muted">SQL, Firebase Firestore</p>
+            </div>
+            <div class="stack-item">
+              <p class="stack-title">Tools</p>
+              <p class="muted">Git, Docker, Unity 2D</p>
+            </div>
+            <div class="stack-item">
+              <p class="stack-title">Networking</p>
+              <p class="muted">OSI Model, TCP/IP, Cisco</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience -->
+        <article class="tile experience">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <p class="tl-title">Programmer • Southwestern University</p>
+              <p class="tl-meta">Jul 2023 – Present</p>
+              <ul class="tl-bullets">
+                <li>
+                  Built and deployed 3+ academic web/Android/software projects
+                  using PHP, Firebase, Node, and Kotlin.
+                </li>
+                <li>
+                  Earned 7 certifications (Java, HTML, UI/UX, networking) to
+                  strengthen technical foundation.
+                </li>
+                <li>
+                  Collaborated in teams, practiced debugging, version control,
+                  and project documentation.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projects -->
+        <article class="tile projects">
+          <h3>Selected Projects</h3>
+
+          <div class="project-grid">
+            <a
+              class="proj-card"
+              href="https://github.com/WMROger/TrashTruck"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p class="proj-title">TrashTruck • TrashTrack RAG AI Chatbot</p>
+              <p class="muted">
+                React Native + Expo chatbot using RAG with Firebase + Firestore
+                and Groq API for AI responses.
+              </p>
+              <div class="chips small">
+                <span>Expo</span><span>Firebase</span><span>Firestore</span
+                ><span>TypeScript</span>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://github.com/WMROger/Davidson-s-Athletics"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p class="proj-title">
+                Davidson’s Athletics • React + Vite Web App
+              </p>
+              <p class="muted">
+                Web development project built with React and Vite (frontend
+                structure and modern tooling).
+              </p>
+              <div class="chips small">
+                <span>React</span><span>Vite</span><span>JavaScript</span>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://github.com/WMROger/KotlinCamotes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p class="proj-title">KotlinCamotes • Android App</p>
+              <p class="muted">
+                Kotlin-based Android project (team/academic build).
+              </p>
+              <div class="chips small">
+                <span>Kotlin</span><span>Android</span>
+              </div>
+            </a>
+
+            <a
+              class="proj-card"
+              href="https://github.com/WMROger/QRCodeGenerator"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p class="proj-title">QRCodeGenerator • Web Tool</p>
+              <a class="link" href="https://qr-code-generator-seven-phi.vercel.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+              <p class="muted">
+                Simple QR code generator project. Includes a live deployed link.
+              </p>
+              <div class="chips small"><span>HTML</span><span>Web</span></div>
+            </a>
+          </div>
+
+          <p class="note muted">
+            Pro tip: Add 1 screenshot per project (even just 1 image) — it makes
+            recruiters stay longer on your page.
+          </p>
+        </article>
+
+        <!-- Certifications -->
+        <article class="tile certs" id="certs">
+          <h3>Licenses & Certifications</h3>
+          <ul class="cert-list">
+            <li>
+              <strong>Java Programming</strong> — Great Learning (Mar 2024)
+            </li>
+            <li>
+              <strong>Java Programming for Beginners</strong> —
+              simplilearn|SkillUp (Jan 2025)
+            </li>
+            <li>
+              <strong>Introduction to HTML</strong> — simplilearn|SkillUp (Jan
+              2024)
+            </li>
+            <li>
+              <strong>Introduction to Graphic Design; Basics of UI/UX</strong> —
+              simplilearn|SkillUp (Jan 2024)
+            </li>
+            <li>
+              <strong>EnGenius Certified Network Professional</strong> —
+              EnGenius (Oct 2024)
+            </li>
+            <li>
+              <strong>EnGenius Certified Network Specialist</strong> — EnGenius
+              (Oct 2024)
+            </li>
+            <li>
+              <strong>Setting Up Computer Networks</strong> — TESDA (Sep 2024)
+            </li>
+          </ul>
+        </article>
+
+        <!-- Education + Languages -->
+        <article class="tile education">
+          <h3>Education</h3>
+          <div class="edu">
+            <p>
+              <strong>Bachelor of Science in Information Technology</strong>
+            </p>
+            <p class="muted">Southwestern University</p>
+            <p class="muted">Expected finish: Mar 2027 • Dean’s Lister</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3>Languages</h3>
+          <p class="muted">Cebuano • English • Tagalog</p>
+        </article>
+
+        <!-- Contact / Hire -->
+        <article class="tile contact" id="contact">
+          <h3>Let’s Connect</h3>
+          <p class="muted">
+            I’m looking for opportunities where I can apply my skills and grow
+            in the tech industry.
+          </p>
+
+          <div class="contact-actions">
+            <a class="pill light" href="mailto:jimenezlutharjames@gmail.com"
+              >Email Me ↗</a
+            >
+            <a class="pill light" href="tel:+639234677614">Call ↗</a>
+          </div>
+
+          <p class="muted small">
+            If you want, I can also help you write a short “Internship
+            Objective” paragraph tailored to a specific job role.
+          </p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>
+          © <span id="year"></span> Luthar James Jimenez • Built with HTML/CSS
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      function copyEmail() {
+        navigator.clipboard.writeText("jimenezlutharjames@gmail.com");
+        alert("Email copied to clipboard!");
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
